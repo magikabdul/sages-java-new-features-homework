@@ -25,4 +25,14 @@ class SectionTest {
         assertThat(section.getNumberOfVertices())
                 .isEqualTo(2);
     }
+
+    @Test
+    void shouldReturnOfDiameter() {
+        //given
+        Section section = new Section(new Point(0, 0), new Point(1, 1));
+
+        //then
+        assertThat(section.getDiameter())
+                .isEqualTo("Section");
+    }
 }

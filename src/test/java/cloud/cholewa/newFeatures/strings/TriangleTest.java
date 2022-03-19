@@ -26,4 +26,14 @@ class TriangleTest {
         assertThat(triangle.getNumberOfVertices())
                 .isEqualTo(3);
     }
+
+    @Test
+    void shouldReturnOfDiameter() {
+        //given
+        Triangle triangle = new Triangle(new Point(0, 0), new Point(1, 1), new Point(2, 2));
+
+        //then
+        assertThat(triangle.getDiameter())
+                .isEqualTo("Triangle");
+    }
 }

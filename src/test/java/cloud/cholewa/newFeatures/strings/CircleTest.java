@@ -46,4 +46,18 @@ class CircleTest {
                 .contains("gatArea() called for");
 
     }
+
+    @Test
+    void shouldReturnOfDiameter() {
+        //given
+        Point point = new Point(2, 6);
+        double radius = 3;
+
+        //when
+        Circle circle = new Circle(point, radius);
+
+        //then
+        assertThat(circle.getDiameter())
+                .isEqualTo("Circle");
+    }
 }
