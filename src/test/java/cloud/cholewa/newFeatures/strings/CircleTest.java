@@ -32,4 +32,18 @@ class CircleTest {
                 .hasMessage("Radius cant be negative value");
     }
 
+    @Test
+    void shouldReturnAreaOfCircle() {
+        //given
+        Point point = new Point(2, 6);
+        double radius = 3;
+
+        //when
+        Circle circle = new Circle(point, radius);
+
+        //then
+        assertThat(circle.getArea())
+                .contains("gatArea() called for");
+
+    }
 }

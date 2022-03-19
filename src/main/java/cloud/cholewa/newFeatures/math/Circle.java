@@ -1,8 +1,7 @@
 package cloud.cholewa.newFeatures.math;
 
-import cloud.cholewa.newFeatures.strings.Point;
 
-public record Circle(cloud.cholewa.newFeatures.strings.Point point, double radius) {
+public record Circle(Point point, double radius) implements Shape {
 
     public Circle(Point point, double radius) {
         this.point = point;
@@ -10,5 +9,10 @@ public record Circle(cloud.cholewa.newFeatures.strings.Point point, double radiu
             throw new IllegalArgumentException("Radius cant be negative value");
         }
         this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * Math.pow(radius, 2);
     }
 }
