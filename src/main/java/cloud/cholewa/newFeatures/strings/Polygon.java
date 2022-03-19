@@ -1,6 +1,6 @@
 package cloud.cholewa.newFeatures.strings;
 
-public abstract non-sealed class Polygon implements Shape {
+public abstract sealed class Polygon implements Shape permits Section, Triangle{
     private final int numberOfVertices;
 
     public Polygon(int numberOfVertices) {

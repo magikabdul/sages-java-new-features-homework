@@ -1,6 +1,6 @@
 package cloud.cholewa.newFeatures.math;
 
-public class Section extends Polygon {
+public non-sealed class Section extends Polygon {
     private final Point begin;
     private final Point end;
 
