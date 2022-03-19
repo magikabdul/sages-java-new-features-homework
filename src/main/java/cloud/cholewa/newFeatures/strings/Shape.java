@@ -1,6 +1,6 @@
 package cloud.cholewa.newFeatures.strings;
 
-public interface Shape {
+public sealed interface Shape permits Circle, Polygon{
 
     String getArea();
 }

@@ -1,6 +1,6 @@
 package cloud.cholewa.newFeatures.math;
 
-public abstract class Polygon {
+public abstract non-sealed class Polygon implements Shape {
     private int numberOfVertices;
 
     public int getNumberOfVertices() {
