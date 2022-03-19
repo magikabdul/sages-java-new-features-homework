@@ -1,4 +1,4 @@
-package cloud.cholewa.newFeatures;
+package cloud.cholewa.newFeatures.strings;
 
 import org.junit.jupiter.api.Test;
 

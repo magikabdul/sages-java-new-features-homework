@@ -1,4 +1,4 @@
-package cloud.cholewa.newFeatures;
+package cloud.cholewa.newFeatures.strings;
 
 public record Point(double x, double y) {
 
